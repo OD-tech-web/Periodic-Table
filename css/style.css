@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(16, 16, 16, 0.9);
+}
+
+table {
+    empty-cells: hide;
+    text-align: center;
+    font-size: 0.6em;
+    margin: auto;
+}
+
+td {
+    border: 0.1rem solid black;
+}
+
+.red {
+    background-color: rgb(192, 64, 64);
+    width: 1rem;
+}
+
+.green {
+    background-color: rgb(57, 184, 57);
+    width: 1rem;
+}
+
+.blue {
+    background-color: rgb(112, 112, 175);
+    width: 1rem;
+}
+
+.yellow {
+    background-color: rgb(212, 212, 91);
+    width: 1rem;
+}
+
+.column,
+.row,
+.rocol {
+    border: none;
+    color: rgb(251, 251, 251, 0.9);
+}
+
+caption {
+    color: rgb(251, 251, 251, 0.9);
+}
+
+.star {
+    border: none;
+    position: relative;
+    font-weight: bold;
+    color: rgb(251, 251, 251, 0.9);
+}
+
+.star-1 {
+    position: absolute;
+    top: 0.1rem;
+}
+
+.star-2 {
+    position: absolute;
+    top: 0.7rem;
+}
+
+.view {
+    display: none;
+}
+
+@media only screen and (max-width: 379px) {
+    .d-flex {
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .column,
+    .row,
+    .rocol,
+    .star,
+    caption {
+        color: #000;
+    }
+
+    .view {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    table {
+        font-size: 0.9em;
+    }
+
+    td {
+        border: 0.1rem solid black;
+    }
+
+    .red,
+    .blue,
+    .green,
+    .yellow {
+        width: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    table {
+        font-size: 1.3em;
+    }
+
+    .red,
+    .blue,
+    .green,
+    .yellow {
+        width: 2rem;
+    }
+}
